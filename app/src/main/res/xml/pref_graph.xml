@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="General">
+
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="NEWS_ENABLED"
+            android:title="Enable News"
+            android:summary="Enables showing news on app start-up. It's strongly recommended to keep this enabled."
+            android:defaultValue="true"
+            />
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="NOTIFICATIONS_ENABLED"
+            android:title="Enable Notifications"
+            android:summary="Notify you when the daily price update has come out."
+            android:defaultValue="true"
+            />
+
+    </android.support.v7.preference.PreferenceCategory>
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Graphing">
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="DISPLAY_PRICES_PER_DATUM"
+            android:title="Display Point Values"
+            android:summary="Enables the current item value to be displayed above each data point."
+            android:defaultValue="true"/>
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="DISPLAY_LEGEND"
+            android:title="Display Legend"
+            android:summary="Enables the legend to be displayed."
+            android:defaultValue="true"/>
+        <android.support.v7.preference.ListPreference
+            android:key="GRAPH_TIMESPAN"
+            android:title="Graph Timespan"
+            android:summary="The number of days prior to today's date that the graphs will show data for."
+            android:entries="@array/daysPriorList"
+            android:entryValues="@array/daysPriorListValues"
+            android:defaultValue="-1"
+            />
+    </android.support.v7.preference.PreferenceCategory>
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Data Colors">
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:defaultValue="@color/colorPrimary"
+            android:key="INSTANT_BUY_COLOR"
+            android:summary="The color for Instant Buy data to be displayed on the graphs."
+            android:title="Instant Buy"
+            app:colorShape="circle"
+            app:colorChoices="@array/color_choices"
+            app:viewSize="large"
+            app:numColumns="5"
+            app:showDialog="true" />
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:defaultValue="@color/colorAccent"
+            android:key="INSTANT_SELL_COLOR"
+            android:summary="The color for Instant Sell data to be displayed on the graphs."
+            android:title="Instant Sell"
+            app:colorShape="circle"
+            app:colorChoices="@array/color_choices"
+            app:viewSize="large"
+            app:numColumns="5"
+            app:showDialog="true" />
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+            android:defaultValue="@color/colorPrimary"
+            android:key="NON_GE_BUYABLE_COLOR"
+            android:summary="The color for Non-GE buyable items to be displayed on the graphs."
+            android:title="Non-GE Buyables"
+            app:colorShape="circle"
+            app:colorChoices="@array/color_choices"
+            app:viewSize="large"
+            app:numColumns="5"
+            app:showDialog="true" />
+    </android.support.v7.preference.PreferenceCategory>
+</android.support.v7.preference.PreferenceScreen>

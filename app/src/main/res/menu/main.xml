@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:id="@+id/itemSprite"
+        android:title=""
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item android:id="@+id/feedbackIcon"
+        android:title="Give Feedback"
+        android:icon="@drawable/ic_mail_outline_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/news"
+        android:title="News"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/infoIcon"
+        android:title="About"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+</menu>

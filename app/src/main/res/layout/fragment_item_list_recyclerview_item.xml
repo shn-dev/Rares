@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:id="@+id/listItem_Container">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/listItem_ImageView"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItem_name"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItem_currVal"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItem_ChartIcon"
+        android:src="@drawable/ic_insert_chart_black_24dp"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItem_ListIcon"
+        android:src="@drawable/ic_format_list_bulleted_black_24dp"/>
+
+</LinearLayout>

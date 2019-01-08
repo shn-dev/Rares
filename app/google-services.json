@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "424441160703",
+    "firebase_url": "https://runeraresback4app.firebaseio.com",
+    "project_id": "runeraresback4app",
+    "storage_bucket": "runeraresback4app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424441160703:android:6dd4d2e531cf237d",
+        "android_client_info": {
+          "package_name": "com.patiserrie.rares"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424441160703-ea8lm1ajvtqcj942b6p7remvj1jin3nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGZCWwa0wJ2z0cjX9LwaYh_yFCqYw6NtM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
